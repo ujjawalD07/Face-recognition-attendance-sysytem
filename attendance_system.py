@@ -44,7 +44,9 @@ cap= cv2.VideoCapture(0)
 
 while True:
     success,img=cap.read()
-
+    c = cv2.waitKey(100)
+    if c == 27:
+        break
      #step1: Resizing image and converting to rgb
     imgS=cv2.resize(img,(0,0),None,0.25,0.25)  #resizing image to 1/4th to perform quick operations
     imgS=cv2.cvtColor(imgS,cv2.COLOR_BGR2RGB)
