@@ -14,7 +14,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 EXPOSE 8080
 
 # Define environment variable
-ENV env
+ENV APP_ENV env
 
 # Run the command to start your application
 CMD ["python", "attendance_system.py"]
