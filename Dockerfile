@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . /app
 
 # Install any needed packages specified in requirements.txt
-RUN pip install requirements.txt
+RUN pip install -r requirements.txt
 
 # Expose a port that the application will listen on
 EXPOSE 8080
